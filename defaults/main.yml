@@ -58,17 +58,17 @@ ubuntu1804cis_rule_1_3_2: true
 ubuntu1804cis_rule_1_3_3: true
 ubuntu1804cis_rule_1_4_1: true
 ubuntu1804cis_rule_1_4_2: true
-ubuntu1804cis_rule_1_5_1: true
+ubuntu1804cis_rule_1_5_1: false
 ubuntu1804cis_rule_1_5_2: true
 ubuntu1804cis_rule_1_5_2_disable_password: true
 ubuntu1804cis_rule_1_5_3: false
 ubuntu1804cis_rule_1_5_4: true
-ubuntu1804cis_rule_1_6_1: true
+ubuntu1804cis_rule_1_6_1: false
 ubuntu1804cis_rule_1_6_2: true
 ubuntu1804cis_rule_1_6_3: true
 ubuntu1804cis_rule_1_6_4: true
 ubuntu1804cis_rule_1_7_1_1: true
-ubuntu1804cis_rule_1_7_1_2: true
+ubuntu1804cis_rule_1_7_1_2: false
 ubuntu1804cis_rule_1_7_1_3: true
 ubuntu1804cis_rule_1_7_1_4: true
 ubuntu1804cis_rule_1_8_1_1: true
@@ -172,7 +172,7 @@ ubuntu1804cis_rule_3_7: true
 # Section 4 rules
 ubuntu1804cis_rule_4_1_1_1: true
 ubuntu1804cis_rule_4_1_1_2: true
-ubuntu1804cis_rule_4_1_1_3: true
+ubuntu1804cis_rule_4_1_1_3: false
 ubuntu1804cis_rule_4_1_1_4: true
 ubuntu1804cis_rule_4_1_2_1: true
 ubuntu1804cis_rule_4_1_2_2: true
@@ -348,10 +348,10 @@ ubuntu1804cis_aide_cron:
   aide_weekday: '*'
 
 # Whether or not to run tasks related to auditing/patching the desktop environment
-ubuntu1804cis_gui: false
+ubuntu1804cis_gui: true
 
 # Set to 'true' if X Windows is needed in your environment
-ubuntu1804cis_xwindows_required: false
+ubuntu1804cis_xwindows_required: true
 
 ubuntu1804cis_openldap_clients_required: false
 ubuntu1804cis_telnet_required: false
@@ -383,9 +383,9 @@ ubuntu1804cis_host_allow:
   - "192.168.0.0/255.255.0.0"
   - "0.0.0.0/0.0.0.0"
 
-ubuntu1804cis_firewall: firewalld
+#ubuntu1804cis_firewall: firewalld
 # ubuntu1804cis_firewall: iptables
-# ubuntu1804cis_firewall: ufw
+ubuntu1804cis_firewall: ufw
 # ubuntu1804cis_firewall: nftables
 
 # 3.5.3.2 | PATCH | Ensure a table exists"
